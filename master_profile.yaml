@@ -1,0 +1,713 @@
+# ==========================================================================
+# MASTER PROFILE - Yuchu Valerie Chen
+# ==========================================================================
+# This file is the keystone of your job search system. Every agent reads
+# from it:
+#   - the triage agent       -> to score role fit (uses archetypes + constraints)
+#   - the tailoring agent    -> to generate per-archetype resume variants
+#   - the cover letter agent -> to match your voice and pull the right stories
+#   - the interview prep agent -> to draft STAR answers from accomplishments
+#
+# STATUS: Initial pass populated from your Feb 2025 resume. Items marked
+# `# TODO:` below need your input - especially STAR fields, voice samples,
+# narratives, and constraints. Framing notes are my drafts; tune to taste.
+# ==========================================================================
+
+meta:
+  name: Yuchu Valerie Chen
+  current_role: Senior Product Manager, AI/ML and Personalization
+  current_company: Wayfair LLC
+  email: valerieycc@gmail.com
+  phone: (732) 331-2005
+  location: Boston, MA
+  linkedin_url:           # TODO
+  github_url:             # TODO (or leave blank if none)
+  portfolio_url:          # TODO - this job-search project itself could become this
+  last_updated: 2026-04-26
+
+  credentials:
+    - MBA, Kellogg School of Management (Strategy & Operations), 2019
+    - MS, Chemistry & Chemical Biology, Rutgers University, 2011
+    - BS, Chemistry, National Sun Yat-Sen University, 2008
+    - CAPM, Project Management Institute, 2014
+    - Six Sigma Green Belt, 2013
+    - Author of 7 patents on pressure-sensitive adhesive
+
+  languages:
+    - Mandarin Chinese (Native)
+    - English (Fluent)
+    - German (A2)
+
+
+# --------------------------------------------------------------------------
+# TARGET ARCHETYPES
+# --------------------------------------------------------------------------
+
+target_archetypes:
+
+  - id: agentic_builder
+    label: AI/Agentic PM at AI-native companies
+    sample_companies: [Anthropic, OpenAI, Cohere, Mistral, Adept, Inflection]
+    positioning_statement: |
+      Senior AI PM who has shipped agentic systems in production - tool-calling
+      workflows, LLM products, vision AI, and the eval/QA infrastructure
+      around them. Translates frontier capabilities into customer value at
+      e-commerce scale.
+    must_have_signals:
+      - Agentic / LLM products in production
+      - Eval frameworks and quality bars
+      - Technical depth (not just spec-writing)
+    nice_to_have_signals:
+      - Research-adjacent culture
+      - Engineering-driven org
+
+  - id: founding_pm
+    label: Founding PM / 0-to-1 startup
+    sample_companies: [YC alumni, Series A/B AI startups]
+    positioning_statement: |
+      Operator with a 15-year track record of 0-to-1 launches across AI,
+      operations, and technical product - from agentic AI workflows at
+      Wayfair to a NASA spin-off go-to-market at Nitto. Comfortable with
+      ambiguity, breadth, and stakeholder-heavy environments.
+    must_have_signals:
+      - Strong founding team
+      - Real product / real customers (not stealth-only)
+      - Equity-forward comp
+    nice_to_have_signals:
+      - Founder from a top company or YC
+      - Post-seed / Series A, pre-PMF
+
+  - id: cx_ai_specialist
+    label: Customer-Experience-AI Specialist
+    sample_companies: [Sierra, Decagon, Ada, Cresta, Forethought, Intercom, Klarna, Replicant, PolyAI, Parloa]
+    positioning_statement: |
+      Domain expert in conversational AI and customer service automation -
+      shipped chatbots, agent co-pilots, and ML decisioning that moved CSAT
+      (22% -> 65% PCSAT), deflection (+30pp), and saved millions at $12B
+      e-commerce scale. Lives in the CS workflow.
+    must_have_signals:
+      - Conversational AI / agent product
+      - CS-specific use cases (not generic chatbot)
+      - Customer-facing scope
+    nice_to_have_signals:
+      - Enterprise CS customers
+      - Voice + chat (not just chat)
+
+
+# --------------------------------------------------------------------------
+# CONSTRAINTS - hard filters for the triage agent
+# --------------------------------------------------------------------------
+
+constraints:
+  comp_floor_total:        # TODO - USD/year, total comp
+  comp_floor_base:         # TODO - USD/year, base only
+  location_pref:           # TODO - Boston / remote / hybrid / open?
+  willing_to_relocate:     # TODO
+  dealbreakers:            # TODO
+    # - "no AI focus despite job title"
+  must_haves:              # TODO
+    # - "ships to real customers"
+
+
+# --------------------------------------------------------------------------
+# CAREER HISTORY
+# --------------------------------------------------------------------------
+
+roles:
+
+  # =========================================================================
+  - company: Wayfair LLC
+    title: Senior Product Manager, AI/ML and Personalization
+    location: Boston, MA
+    start: 2024-06
+    end: present
+    one_line: |
+      Lead PM for AI/ML products in Customer Service at $12B e-commerce -
+      agentic workflows, conversational AI, vision AI, ML decisioning.
+    context: |
+      # TODO: team scope (HC, partners), strategic mandate, what state CS-AI
+      # was in when you took the role.
+
+    accomplishments:
+
+      - id: wf_supplier_agentic
+        headline: Agentic AI supplier-ticket workflows
+        full_bullet: |
+          Launched agentic AI workflows to automate supplier ticket handling,
+          orchestrating multi-step resolution tasks with tool-calling agents;
+          reduced average time-to-resolution by 30 hours and achieved $1M in
+          annual savings.
+        archetype_fit: [agentic_builder, founding_pm, cx_ai_specialist]
+        archetype_framing:
+          agentic_builder: |
+            STRONGEST agentic-builder anchor. Lead with multi-step tool-calling
+            architecture, orchestration design, and the production deployment.
+            Speak to tool selection, error handling, and the eval bar.
+          founding_pm: |
+            Frame as 0-to-1 launch of a new agentic system in a Fortune-500
+            environment - shows you can build new from inside an org.
+          cx_ai_specialist: |
+            Frame as B2B/operational CS automation. Lead with the 30-hr
+            resolution-time cut and $1M savings; clarify in interview that
+            "supplier tickets" is operational CS, not consumer.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            30-hour reduction in time-to-resolution; $1M annual savings.
+        evidence_links: []  # TODO - dashboards, demo links, internal docs
+        people_involved:    # TODO - who could vouch for this work?
+
+      - id: wf_chatbot_pcsat
+        headline: AI chatbot across CS journeys
+        full_bullet: |
+          Built an AI chatbot across multiple journeys in Customer Service,
+          improving VA PCSAT from 22% to 65% and boosting contact deflection
+          by approximately 30pp.
+        archetype_fit: [cx_ai_specialist, agentic_builder]
+        archetype_framing:
+          cx_ai_specialist: |
+            STRONGEST CX-AI anchor. Lead with the PCSAT lift (22 -> 65, a
+            ~3x jump) and +30pp deflection - those numbers are headline-grade.
+            Emphasize multi-journey scope and customer-facing nature.
+          agentic_builder: |
+            Frame as production conversational LLM system at e-commerce scale.
+            The PCSAT 3x demonstrates real eval/quality discipline.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            VA PCSAT 22% -> 65%; contact deflection +30pp.
+        evidence_links: []
+        people_involved:
+
+      - id: wf_vision_scam
+        headline: Vision AI for scam detection in service
+        full_bullet: |
+          Launched first vision AI tool for scam detection and prevention in
+          service with $3M/yr in cost savings.
+        archetype_fit: [agentic_builder, cx_ai_specialist]
+        archetype_framing:
+          agentic_builder: |
+            Multi-modal AI is rare; signals you ship across model types, not
+            just LLMs. "First vision AI tool" frames you as the one who
+            opened a new model surface for the team.
+          cx_ai_specialist: |
+            Service-side AI tackling a real CS pain point (scam, fraud).
+            Lead with the $3M cost savings.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            $3M/yr cost savings from scam detection and prevention.
+        evidence_links: []
+        people_involved:
+
+      - id: wf_return_shipping_fee
+        headline: ML-driven Return Shipping Fee Exception
+        full_bullet: |
+          Led the A/B/C test and launched an ML-driven Return Shipping Fee
+          Exception feature within Wayfair's service workflow, improving
+          customer experience and increasing repeat purchase rate by 1.3pp
+          versus control.
+        archetype_fit: [cx_ai_specialist]
+        archetype_framing:
+          cx_ai_specialist: |
+            Lead with experimentation rigor (A/B/C, not just A/B) and the
+            repeat-purchase lift (+1.3pp) - shows you measure CX in
+            downstream business metrics, not vanity numbers.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            +1.3pp repeat purchase rate vs. control.
+        evidence_links: []
+        people_involved:
+
+  # =========================================================================
+  - company: Wayfair LLC
+    title: Senior AI/ML Product Manager, Data Science & Machine Learning
+    location: Boston, MA
+    start: 2023-01
+    end: 2024-05
+    one_line: |
+      AI/ML PM owning roadmaps for LLM and ML prediction products in CS.
+    context: |
+      # TODO: team structure, predecessor state.
+
+    accomplishments:
+
+      - id: wf_llm_roadmap
+        headline: LLM and ML roadmap for Customer Service
+        full_bullet: |
+          Developed product visions and managed product roadmaps for LLMs and
+          ML-based prediction models in Customer Service. Prioritized feature
+          improvements based on user experiences and business impacts,
+          achieving $3M in annual cost savings.
+        archetype_fit: [agentic_builder, cx_ai_specialist, founding_pm]
+        archetype_framing:
+          agentic_builder: |
+            Frame as setting AI product direction (vision, not just exec).
+            Emphasize portfolio leadership across LLM + classical ML.
+          cx_ai_specialist: |
+            CS-anchored portfolio leadership; $3M savings is the proof.
+          founding_pm: |
+            Frame as ownership of an entire product surface, not a single
+            feature - the breadth of LLM + ML across CS reads as founding-PM
+            scope inside a big org.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            $3M annual cost savings across the AI/ML CS portfolio.
+        evidence_links: []
+        people_involved:
+
+      - id: wf_qa_copilot
+        headline: First QA product for Gen AI Customer Service Co-pilot
+        full_bullet: |
+          Led cross-functional teams (Data Science, UX design, ML Engineering)
+          to develop and launch the first quality assurance product for our
+          Gen AI tool (Customer Service Agent Co-pilot), significantly
+          enhancing product reliability and user satisfaction.
+        archetype_fit: [agentic_builder, cx_ai_specialist]
+        archetype_framing:
+          agentic_builder: |
+            HIGHEST-LEVERAGE story for AI-native interviews. You owned the
+            eval/QA layer for a Gen AI product - this is the exact "quality
+            bar" work AI-native companies hire PMs to do. Lead with this
+            anytime the JD mentions evals, reliability, or quality.
+          cx_ai_specialist: |
+            Frame as ensuring an agent-assist tool was production-ready
+            enough to deploy to support agents at scale.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result:           # TODO - quantify if possible (% issue reduction, etc.)
+        evidence_links: []
+        people_involved:
+
+      - id: wf_call_routing
+        headline: Intelligent ML sales call routing
+        full_bullet: |
+          Enhanced B2B and B2C sales efficiency by leading the discovery and
+          conducting A/B testing to optimize an intelligent sales call routing
+          product, utilizing predictive, value-driven machine learning
+          algorithms and achieving a $400K Gross Profit boost.
+        archetype_fit: [cx_ai_specialist, agentic_builder]
+        archetype_framing:
+          cx_ai_specialist: |
+            ML-driven CX decisioning across B2B + B2C. Lead with the breadth
+            and the gross-profit outcome.
+          agentic_builder: |
+            Frame as predictive ML in production - signals you're not only
+            an LLM PM but can ship classical ML too.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            $400K Gross Profit boost across B2B and B2C.
+        evidence_links: []
+        people_involved:
+
+  # =========================================================================
+  - company: Wayfair LLC
+    title: Senior Manager, Partner Operations
+    location: Boston, MA
+    start: 2021-12
+    end: 2022-12
+    one_line: |
+      Led product strategy in freight forwarding for Asian suppliers; pre-PM
+      role at Wayfair.
+    context: |
+      # TODO: how did this role transition into the PM track?
+
+    accomplishments:
+
+      - id: wf_castlegate_integration
+        headline: CastleGate AI supplier integration
+        full_bullet: |
+          Led product strategy in freight forwarding with a focus on Asian
+          suppliers, successfully integrating 100 suppliers into the
+          CastleGate service through AI, securing contracts for 5,000
+          containers ($40M).
+        archetype_fit: [founding_pm, cx_ai_specialist]
+        archetype_framing:
+          founding_pm: |
+            Lead with the breadth - product strategy, supplier integration,
+            contract negotiation, AI integration. Multiple workstreams, $40M
+            scale, single owner. Reads as founding-PM mode.
+          cx_ai_specialist: |
+            Less direct fit; frame as B2B operational AI integration if it
+            matters for the role.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            100 suppliers integrated; 5,000 containers ($40M) in contracts.
+        evidence_links: []
+        people_involved:
+
+      - id: wf_upholstery_relationships
+        headline: Upholstery supplier executive relationships
+        full_bullet: |
+          Established strong relationships with Upholstery supplier executives,
+          improved e-commerce operations, promoted technology adoption, and
+          ensured precise Financial Reporting through product and market
+          trend analysis.
+        archetype_fit: [founding_pm]
+        archetype_framing:
+          founding_pm: |
+            Use sparingly. Signals exec-level stakeholder management and
+            cross-functional breadth, but is less PM-flavored than other
+            entries. Probably omit from AI-native resume variants.
+        star: {}            # TODO if including
+        evidence_links: []
+        people_involved:
+
+  # =========================================================================
+  - company: CIRCOR International
+    title: Director, Financial Planning and Analysis
+    location: Burlington, MA
+    start: 2020-09
+    end: 2021-12
+    one_line: |
+      LAUNCH (1 of 4 corporate-wide GM rotational program candidates) - FP&A
+      directorship.
+    context: |
+      # TODO: scope, what made this rotation distinct.
+
+    accomplishments:
+
+      - id: circor_women_erg
+        headline: Founded Women @ CIRCOR ERG
+        full_bullet: |
+          Founded and spearheaded Women @ CIRCOR ERG, focusing on empowering
+          female employees through career development seminars and workshops,
+          fostering an inclusive and supportive professional community.
+        archetype_fit: [founding_pm]
+        archetype_framing:
+          founding_pm: |
+            Optional resume entry; better as a "tell me about yourself" /
+            leadership story than a body bullet. Demonstrates building
+            something from zero, including community and culture.
+        star: {}            # TODO if using in interview
+        evidence_links: []
+        people_involved:
+
+      - id: circor_aoi_budget
+        headline: $108M AOI annual budget
+        full_bullet: |
+          Developed a $108M AOI annual budget in collaboration with FP&A teams
+          and secured buy-in from executive leadership.
+        archetype_fit: []   # Not directly relevant to AI PM resume; useful as context
+        archetype_framing: {}
+        star: {}
+        evidence_links: []
+        people_involved:
+
+      - id: circor_sap_bpc
+        headline: Forecasting tools with SAP BPC
+        full_bullet: |
+          Built tools and reports to analyze actuals and forecast with SAP
+          BPC; collaborated closely with functional VPs to plan and achieve
+          corporate financial goals of $30M OPEX.
+        archetype_fit: []
+        archetype_framing: {}
+        star: {}
+        evidence_links: []
+        people_involved:
+
+  # =========================================================================
+  - company: CIRCOR International
+    title: Director, Business Development
+    location: Burlington, MA
+    start: 2019-08
+    end: 2020-08
+    one_line: |
+      Strategy and BD directorship - divestiture, VoC, growth planning.
+    context: |
+      # TODO
+
+    accomplishments:
+
+      - id: circor_divestiture
+        headline: $50M business divestiture
+        full_bullet: |
+          Orchestrated the strategic planning and execution of a $50M business
+          divestiture, navigating through comprehensive data analysis and
+          signal interpretation; coordinated extensive internal and external
+          meetings to ensure thorough due diligence.
+        archetype_fit: [founding_pm]
+        archetype_framing:
+          founding_pm: |
+            Frame as comfort with high-stakes ambiguity, exec-level stakeholder
+            management, and end-to-end project ownership. Less about AI, more
+            about strategic judgment and operating muscle.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            $50M divestiture executed.
+        evidence_links: []
+        people_involved:
+
+      - id: circor_voc
+        headline: 50+ VoC interviews and continuous improvement plans
+        full_bullet: |
+          Conducted 50+ interviews with key channel partners and end-users,
+          synthesized the Voice of the Customer (VoC) and industry trends,
+          and developed continuous improvement plans for multiple product
+          lines, unlocking $20M incremental revenue.
+        archetype_fit: [founding_pm, cx_ai_specialist]
+        archetype_framing:
+          founding_pm: |
+            Lead with customer obsession and depth - 50+ interviews shows
+            real research muscle. Pair with the $20M revenue outcome.
+          cx_ai_specialist: |
+            Frame as deep customer/user research - the foundation that
+            informs AI product direction in CS.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            $20M incremental revenue unlocked.
+        evidence_links: []
+        people_involved:
+
+  # =========================================================================
+  - company: Nitto, Inc.
+    title: Project Manager, New Business Development
+    location: Lakewood, NJ
+    start: 2016-04
+    end: 2017-06
+    one_line: |
+      Pre-MBA new-business-development PM after 5 years as a chemist.
+    context: |
+      # TODO
+
+    accomplishments:
+
+      - id: nitto_pdr_process
+        headline: New Product Development Request Process
+        full_bullet: |
+          Designed and implemented a new Product Development Request Process
+          that aligned opportunities with core technologies, overhauled the
+          communication platform between sales and technical teams, and
+          launched 6 projects totaling $7.2M in annual revenue.
+        archetype_fit: [founding_pm]
+        archetype_framing:
+          founding_pm: |
+            0-to-1 process design + cross-functional alignment + measurable
+            revenue. Use as evidence of founding instincts pre-tech.
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            6 projects launched; $7.2M annual revenue.
+        evidence_links: []
+        people_involved:
+
+      - id: nitto_hydrogen_gtm
+        headline: NASA spin-off hydrogen detection GTM
+        full_bullet: |
+          Developed a global go-to-market strategy for a newly acquired NASA
+          spin-off hydrogen detection technology; built and executed launch
+          plans that enabled large-scale production, securing $100K in
+          monthly sales.
+        archetype_fit: [founding_pm]
+        archetype_framing:
+          founding_pm: |
+            Pure 0-to-1 GTM for a brand-new acquired tech. Great founding-PM
+            color even though it's not AI - shows you're comfortable with
+            "nobody has done this before."
+        star:
+          situation:        # TODO
+          task:             # TODO
+          action:           # TODO
+          result: |
+            $100K/month in sales secured at launch.
+        evidence_links: []
+        people_involved:
+
+  # =========================================================================
+  - company: Nitto, Inc.
+    title: Senior Chemist / Chemist, Research and Development
+    location: Lakewood, NJ
+    start: 2011-11
+    end: 2016-03
+    one_line: |
+      R&D chemist at $7B conglomerate; ladder included Senior Chemist (2014-2016)
+      and Chemist (2011-2013). Author of 7 patents in pressure-sensitive
+      adhesive.
+    context: |
+      Foundational technical role; relevant for AI PM as evidence of technical
+      depth and patent-worthy original work.
+
+    accomplishments:
+
+      - id: nitto_aircraft_corrosion
+        headline: Aircraft corrosion solution co-development
+        full_bullet: |
+          Co-developed an innovative aircraft corrosion solution by
+          collaborating with an airline client to manufacture inexpensive yet
+          superior corrosion-resistant products, resulting in $2.4M annual
+          sales.
+        archetype_fit: []   # Use only as technical-depth color
+        archetype_framing: {}
+        star: {}
+        evidence_links: []
+        people_involved:
+
+      - id: nitto_offshoring
+        headline: Offshoring production to Asia
+        full_bullet: |
+          Oversaw offshoring production to Asia by collaborating with material
+          suppliers, streamlining manufacturing, and verifying product
+          robustness, improving profitability by an estimated 20%.
+        archetype_fit: []
+        archetype_framing: {}
+        star: {}
+        evidence_links: []
+        people_involved:
+
+      - id: nitto_5_products
+        headline: 5 new + 3 improved adhesive products
+        full_bullet: |
+          Launched 5 new products and improved 3 existing products by
+          designing formulation and manufacturing for automotive, aerospace,
+          and housing adhesives that generated $2M in revenue over 2 years.
+        archetype_fit: []
+        archetype_framing: {}
+        star: {}
+        evidence_links: []
+        people_involved:
+
+
+# --------------------------------------------------------------------------
+# SKILLS - extracted from your resume; refine as needed
+# --------------------------------------------------------------------------
+
+skills:
+
+  ai_and_ml:
+    - LLM application development
+    - Agentic AI / tool-calling workflows
+    - Conversational AI / chatbots
+    - Vision AI / multi-modal
+    - Predictive ML / value-driven algorithms
+    - Eval / QA frameworks for Gen AI
+
+  product:
+    - 0-to-1 product launch
+    - Roadmapping and product strategy
+    - A/B/C testing and experimentation
+    - Cross-functional leadership (DS, ML Eng, UX)
+    - Voice of Customer research
+    - Agile delivery
+
+  domain:
+    - Customer service automation
+    - E-commerce / retail at scale
+    - Supplier operations / B2B
+    - Sales call routing
+    - Conversational AI for CS
+    - Strategy and operations (Kellogg)
+
+  tools_and_methods:
+    - Six Sigma Green Belt
+    - CAPM
+    - SAP BPC (legacy)
+    # TODO: any of these? SQL / Python / Figma / Looker / Mode / etc.
+
+
+# --------------------------------------------------------------------------
+# EDUCATION
+# --------------------------------------------------------------------------
+
+education:
+  - school: Kellogg School of Management, Northwestern University
+    degree: MBA, Strategy and Operations
+    location: Evanston, IL
+    start: 2017-08
+    end: 2019-06
+    notes:
+      - Kellogg Scholarship recipient ($70K merit-based)
+      - Director, Global Affairs - Kellogg Student Association
+      - VP Marketing - Asian Management Association
+      - Internships: KEARNEY (Summer 2018), Clean Energy Trust (Winter 2019), NanoGraf (Spring 2019)
+
+  - school: Rutgers University
+    degree: MS, Chemistry and Chemical Biology
+    location: New Brunswick, NJ
+    start: 2009-09
+    end: 2011-10
+
+  - school: National Sun Yat-Sen University
+    degree: BS, Chemistry
+    location: Kaohsiung, Taiwan
+    start: 2004-09
+    end: 2008-06
+
+
+# --------------------------------------------------------------------------
+# VOICE - used by the cover letter agent and outreach drafter
+# --------------------------------------------------------------------------
+
+voice:
+  tone_words: [warm, direct, builder-energy]   # TODO: tune to taste
+  do:
+    - First-person, concrete examples
+    - Name the actual work, not abstractions
+    - Show enthusiasm without sycophancy
+  dont:
+    - Corporate jargon
+    - Generic "I am passionate about..."
+    - Filler that could apply to any candidate
+  sample_writing: |
+    # TODO: paste 2-3 paragraphs of your real writing - a Slack message you
+    # liked, an old cover letter, a LinkedIn post, the opener of a strategy
+    # doc. The cover letter agent will pattern-match on this.
+
+
+# --------------------------------------------------------------------------
+# NARRATIVES - the big stories of your career
+# --------------------------------------------------------------------------
+
+narratives:
+
+  why_ai:
+    arc: |
+      # TODO: How did a chemist with 7 patents end up an AI PM at Wayfair?
+      # The pivot story is distinctive - chemistry -> Kellogg -> CIRCOR ->
+      # Wayfair AI/ML - and worth telling deliberately.
+
+  why_now:
+    arc: |
+      # TODO: What's pulling you, not just pushing you. Why a startup vs.
+      # AI-native vs. CX-AI specialist now, after building inside a $12B
+      # incumbent for 4+ years?
+
+  superpower:
+    arc: |
+      # TODO: Possible candidates from your record:
+      #   - Bridging deep technical work with executive/business framing
+      #     (chemist + MBA + AI PM)
+      #   - Building 0-to-1 inside large orgs (most of your wins are "first")
+      #   - Quantitative CX ownership (PCSAT 22->65, +30pp deflection)
+      # Pick ONE and own it.
+
+  growing_edge:
+    arc: |
+      # TODO: Honest, not performative. What are you actively working on?
